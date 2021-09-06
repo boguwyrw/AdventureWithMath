@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // zrocis Singleton
+    // Singleton
+    private static GameManager _instance;
 
-    void Start()
+    public static GameManager Instance
     {
-        
+        get
+        {
+            return _instance;
+        }
+    }
+
+    void Awake()
+    {
+        _instance = this;
     }
 
     void Update()

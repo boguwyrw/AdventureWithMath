@@ -16,6 +16,8 @@ public class DifficultyLevels : MonoBehaviour
         }
 
         Debug.Log(arithmeticOperations[1].gameObject.name);
+        // Access to singleton GameManager
+        Debug.Log(GameManager.Instance.name);
     }
 
     void Update()
